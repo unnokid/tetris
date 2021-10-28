@@ -3,8 +3,11 @@ package sample.game;
 import javafx.animation.AnimationTimer;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.paint.Color;
 import sample.player.Block;
 import sample.player.Player;
+
 
 public class Game {
     private GraphicsContext gc;
@@ -36,6 +39,25 @@ public class Game {
         }
         this.gc = canvas.getGraphicsContext2D();
     }
+
+
+    public void update(double delta){
+        //블럭 자동하강
+    }
+
+    public void checkLineStatus(){
+
+    }
+
+    public void render(){
+
+    }
+
+    public void keyHandler(KeyEvent e) {
+        player.keyHandler(e); //키보드 핸들링을 담당하는 매서드
+    }
+
+
 
 
 }
